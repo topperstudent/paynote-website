@@ -35,7 +35,7 @@ jobs:
         run: flutter config --enable-web
 
       - name: Build Web
-        run: flutter build web --release
+        run: flutter build web --release --base-href "/paynote-website/"
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
